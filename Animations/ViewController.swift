@@ -6,12 +6,18 @@
 //
 
 import UIKit
+import Lottie
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let animation = LottieAnimationView(name: "fish")
+        animation.frame = self.view.frame
+        self.view.addSubview(animation)
+        animation.animationSpeed = 0.2
+        animation.play()
+        
     }
 
 
